@@ -1,0 +1,56 @@
+[{
+  "name": "Martin Schafer",
+  "class": "man",
+  "textClass": "emphasis",
+  "marriages": [{
+    "spouse": {
+      "name": "Judy Schafer",
+      "class": "woman"
+    },
+    "children": [{
+      "name": "Mark Schafer",
+      "class": "man",
+      "marriages": [{
+        "spouse": {
+          "name": "Michelle Ames",
+          "class": "woman"
+        },
+        "children": [{
+          "name": "Cole Schafer",
+          "class": "man",
+          "marriages":[{
+            "spouse": {
+              "name":"Cole's Wife",
+              "class": "woman"
+            },
+            "children": [{
+              "name":"Cole's Son",
+              "class":"man"
+            },{
+              "name":"Cole's Daughter",
+              "class":"woman"
+            },{
+              "name":"Cole's Other Daughter",
+              "class":"woman"
+            }]
+          }]
+        }, {
+          "name": "Cameron Schafer",
+          "class": "woman"
+        }, {
+          "name": "Ivy Schafer",
+          "class": "woman"
+        }]
+      }]
+    },{
+      "name": "Karen Schafer",
+      "class": "woman",
+      "marriages": [{
+        "spouse": {
+          "name": "Jerry Schude",
+          "class": "man"
+        }
+      }]
+    }]
+  }]
+}]

@@ -1,0 +1,33 @@
+{
+    "@id": "_:I1",
+    "@type": "INDI",
+    "BIRT": {
+      "DATE": "2 OCT 1954",
+      "PLAC": "Cincinnatti, Hamilton, Ohio",
+      "SOUR": [
+        {
+          "$lnk": "_:S12",
+          "DATA": {
+            "TEXT": "Birth place: Beth. mat. Hosp., Cincinnati, Hamilton, Ohio; home ofmother: 6917 Cambridge Ave.; Child: Nancy Sue Herman, female singlebirth, born 10/2/1954. Father: Luther Russell Herman, white, age 32, bornN. Carolina, Elec. eng. Gen. Elec.. Mother: Nan Jones, white,  age 33,born N. Carolkina, 2 other children. Child born 6:13 am"
+          },
+          "QUAY": "3"
+        },
+        {
+          "$lnk": "_:S8",
+          "DATA": {
+            "TEXT": "Cincinnati, OH 10:53 am; Mrs Wait A Jones, 1501 New Hope Rd, phoneRaymond 8719 Ben Hill, Atlanta: Nancy Sue arrived 615 seven poundseverything fine. Luther"
+          },
+          "QUAY": "3"
+        }
+      ]
+    },
+    "FAMC": "_:F2",
+    "FAMS": "_:F1",
+    "NAME": "Nancy Sue /Herman/",
+    "SEX": "F",
+    "SOUR": {
+      "$lnk": "_:S1",
+      "QUAY": "2"
+    },
+    "_UID": "4AE1BE24A79B4A478D6BC6BF64A59C7274C4"
+  }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.node .selected {
+  stroke: red;
+}
+
+.link {
+  stroke: #999;
+}
+
+.brush .extent {
+  fill-opacity: .1;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 60px;          
+    height: 40px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+</style>
+<head>
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <div id="name"></div>
+<script>
+
+var width = 1000,height = 500;
+
+//defines container
+var svg = d3.select("body")
+    .append("svg")
+    .attr("style", "outline: solid red;")
+    .attr("width", width)
+    .attr("height", height);
+
+    svg.append("svg:defs").selectAll("marker")
+    .data(["end"])      // Different link/path types can be defined here
+  .enter().append("svg:marker")    // This section adds in the arrows
+    .attr("id", String)
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 15)
+    .attr("refY", -1.5)
+    .attr("markerWidth", 6)
+    .attr("markerHeight", 6)
+    .attr("orient", "auto")
+  .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5");
+
+//defines link between nodes
+var link = svg.append("g")
+    .attr("class", "link")
+    .selectAll("line");
+
+//defines nodes
+var node = svg.append("g")
+    .attr("class", "node")
+    .selectAll("circle");
+
+/*
+ * Currently front end code only supports rending same node twice, if it was to appear three 
+ * times we would need an array of divs to assign to each node
+ */
+// Define the div for the tooltip
+var div = d3.select("body").append("div") 
+    .attr("class", "tooltip")       
+    .style("opacity", 0);
+
+var spanDiv = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+function getData(callback){
+  var temp = d3.json("layout.json", 
+    function(error, graph){
+      //console.log(graph);
+      callback(graph);
+    });
+}
+
+function selectSame(id,graph,x,y){
+  graph.nodes.forEach(
+    function(d){
+      //console.log(d);
+      if(d.id === id && d.x != x){
+        console.log("graph label at x,y " + d.x + "," + d.y);
+        spanDiv.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            spanDiv .html(d.name + " \n" + d.birthday.DATE.split(" ").pop())  
+                .style("left", (d.x) + "px")   
+                .style("top", (d.y - 28) + "px");  
+      }
+    });
+}
+
+function deselectSame(id, graph, x , y){
+  graph.nodes.forEach(
+    function(d){
+      if(d.id === id && d.x != x){
+        spanDiv.transition()    
+                .duration(500)    
+                .style("opacity", 0);
+      }
+    });
+}
+
+getData(function(graph){
+      //sets links between each nodes
+    graph.links.forEach(
+      function(d) {
+        //console.log(d);
+        d.source = graph.nodes[d.source];
+        d.target = graph.nodes[d.target];
+      });
+
+      link.data(graph.links).enter().append("line")
+      .attr("x1", function(d) {if(d.source != null){return d.source.x}})
+      .attr("y1", function(d) {if(d.source != null){return d.source.y;}})
+      .attr("x2", function(d) {if(d.target != null){return d.target.x;}})
+      .attr("y2", function(d) {if(d.target != null){return d.target.y;}})
+      .attr("stroke", function(d){
+        if(d.note === "same"){
+          return 'blue';
+        }
+      })
+      //.attr("marker-end", "url(#end)");
+      .attr("marker-end", 
+        function(d){
+          if(d.note != "same"){
+            return "url(#end)";
+          }
+        });
+
+    //graphs nodes
+    node.data(graph.nodes).enter()
+    .append("circle")
+      .style("stroke", "black")
+      .style("fill", function(d) {
+        if(d.gender == "M") return "blue";
+        else if (d.gender == "F") return "pink";
+        else return "black";
+      })
+      .attr("r", 3)
+      .attr("cx", function(d) { return d.x;})
+      .attr("cy", function(d) { return d.y; })
+      .on("mouseover", function(d) { 
+            selectSame(d.id, graph, d.x, d.y);   
+            div.transition()    
+                .duration(200)    
+                .style("opacity", .9);    
+            div .html(d.name + " \n" + d.birthday.DATE.split(" ").pop())  
+                .style("left", (d3.event.pageX) + "px")   
+                .style("top", (d3.event.pageY - 28) + "px");  
+            })          
+        .on("mouseout", function(d) { 
+            deselectSame(d.id, graph, d.x, d.y);  
+            div.transition()    
+                .duration(500)    
+                .style("opacity", 0);
+              });
+
+    //puts text on screen
+    var text = svg.append("g")
+      .attr("class", "labels")
+      .selectAll("text")
+      .data(graph.nodes)
+        .enter().append("text")
+        .attr("dx", function(d) {return d.x +3})
+        .attr("dy", function(d) {return d.y - 3})
+      .text(function(d) { return d.initials}) 
+        .style("font-size","8px"); 
+
+    });
+</script>

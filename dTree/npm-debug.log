@@ -1,0 +1,921 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'jsonlint' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose config Skipping project config: /home/cole/.npmrc. (matches userconfig)
+5 verbose cache add [ 'jsonlint', null ]
+6 verbose cache add name=undefined spec="jsonlint" args=["jsonlint",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'jsonlint',
+7 verbose parsed url   path: 'jsonlint',
+7 verbose parsed url   href: 'jsonlint' }
+8 silly lockFile ae1977c9-jsonlint jsonlint
+9 verbose lock jsonlint /home/cole/.npm/ae1977c9-jsonlint.lock
+10 silly lockFile ae1977c9-jsonlint jsonlint
+11 silly lockFile ae1977c9-jsonlint jsonlint
+12 verbose addNamed [ 'jsonlint', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e5e8837b-jsonlint jsonlint@
+15 verbose lock jsonlint@ /home/cole/.npm/e5e8837b-jsonlint.lock
+16 silly addNameRange { name: 'jsonlint', range: '*', hasData: false }
+17 verbose request where is /jsonlint
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id d781bcce92c7cf85
+20 verbose url raw /jsonlint
+21 verbose url resolving [ 'https://registry.npmjs.org/', './jsonlint' ]
+22 verbose url resolved https://registry.npmjs.org/jsonlint
+23 verbose request where is https://registry.npmjs.org/jsonlint
+24 info trying registry request attempt 1 at 14:49:08
+25 http GET https://registry.npmjs.org/jsonlint
+26 http 200 https://registry.npmjs.org/jsonlint
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"8Q1YNUF99X01DBVID4UHMQLC7"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'content-encoding': 'gzip',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     'content-length': '3602',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Wed, 07 Sep 2016 18:49:08 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '169',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-iad2134-IAD',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1473274148.975228,VS0,VE0',
+27 silly registry.get     vary: 'Accept-Encoding' } ]
+28 silly addNameRange number 2 { name: 'jsonlint', range: '*', hasData: true }
+29 silly addNameRange versions [ 'jsonlint',
+29 silly addNameRange   [ '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.1.0',
+29 silly addNameRange     '1.1.1',
+29 silly addNameRange     '1.2.0',
+29 silly addNameRange     '1.2.1',
+29 silly addNameRange     '1.3.0',
+29 silly addNameRange     '1.3.1',
+29 silly addNameRange     '1.3.2',
+29 silly addNameRange     '1.4.0',
+29 silly addNameRange     '1.4.1',
+29 silly addNameRange     '1.5.0',
+29 silly addNameRange     '1.5.1',
+29 silly addNameRange     '1.6.0',
+29 silly addNameRange     '1.6.1',
+29 silly addNameRange     '1.6.2' ] ]
+30 verbose addNamed [ 'jsonlint', '1.6.2' ]
+31 verbose addNamed [ '1.6.2', '1.6.2' ]
+32 silly lockFile 704895ba-jsonlint-1-6-2 jsonlint@1.6.2
+33 verbose lock jsonlint@1.6.2 /home/cole/.npm/704895ba-jsonlint-1-6-2.lock
+34 silly lockFile c8116a48--org-jsonlint-jsonlint-1-6-2-tgz https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+35 verbose lock https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz /home/cole/.npm/c8116a48--org-jsonlint-jsonlint-1-6-2-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz',
+36 verbose addRemoteTarball   '5737045085f55eb455c68b1ff4ebc01bd50e8830' ]
+37 info retry fetch attempt 1 at 14:49:08
+38 verbose fetch to= /tmp/npm-7362-mGF707ah/registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+39 http GET https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+40 http 200 https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+41 silly lockFile c8116a48--org-jsonlint-jsonlint-1-6-2-tgz https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+42 silly lockFile c8116a48--org-jsonlint-jsonlint-1-6-2-tgz https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz
+43 silly lockFile 704895ba-jsonlint-1-6-2 jsonlint@1.6.2
+44 silly lockFile 704895ba-jsonlint-1-6-2 jsonlint@1.6.2
+45 silly lockFile e5e8837b-jsonlint jsonlint@
+46 silly lockFile e5e8837b-jsonlint jsonlint@
+47 silly resolved [ { author:
+47 silly resolved      { name: 'Zach Carter',
+47 silly resolved        email: 'zach@carter.name',
+47 silly resolved        url: 'http://zaa.ch' },
+47 silly resolved     name: 'jsonlint',
+47 silly resolved     description: 'Validate JSON',
+47 silly resolved     keywords: [ 'json', 'validation', 'lint', 'jsonlint' ],
+47 silly resolved     version: '1.6.2',
+47 silly resolved     preferGlobal: true,
+47 silly resolved     repository: { type: 'git', url: 'git://github.com/zaach/jsonlint.git' },
+47 silly resolved     bugs: { url: 'http://github.com/zaach/jsonlint/issues' },
+47 silly resolved     main: 'lib/jsonlint.js',
+47 silly resolved     bin: { jsonlint: 'lib/cli.js' },
+47 silly resolved     engines: { node: '>= 0.6' },
+47 silly resolved     dependencies: { nomnom: '>= 1.5.x', JSV: '>= 4.0.x' },
+47 silly resolved     devDependencies: { test: '*', jison: '*', 'uglify-js': '*' },
+47 silly resolved     scripts: { test: 'node test/all-tests.js' },
+47 silly resolved     homepage: 'http://zaach.github.com/jsonlint/',
+47 silly resolved     optionalDependencies: {},
+47 silly resolved     _id: 'jsonlint@1.6.2',
+47 silly resolved     dist:
+47 silly resolved      { shasum: '5737045085f55eb455c68b1ff4ebc01bd50e8830',
+47 silly resolved        tarball: 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz' },
+47 silly resolved     _from: 'jsonlint@',
+47 silly resolved     _npmVersion: '1.3.26',
+47 silly resolved     _npmUser: { name: 'zaach', email: 'zack.carter@gmail.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _shasum: '5737045085f55eb455c68b1ff4ebc01bd50e8830',
+47 silly resolved     _resolved: 'https://registry.npmjs.org/jsonlint/-/jsonlint-1.6.2.tgz' } ]
+48 info install jsonlint@1.6.2 into /home/cole
+49 info installOne jsonlint@1.6.2
+50 verbose node_modules/jsonlint unbuild
+51 verbose tar unpack /home/cole/.npm/jsonlint/1.6.2/package.tgz
+52 silly lockFile fbd7f77b--home-cole-node-modules-jsonlint tar:///home/cole/node_modules/jsonlint
+53 verbose lock tar:///home/cole/node_modules/jsonlint /home/cole/.npm/fbd7f77b--home-cole-node-modules-jsonlint.lock
+54 silly lockFile d2d11663-e-npm-jsonlint-1-6-2-package-tgz tar:///home/cole/.npm/jsonlint/1.6.2/package.tgz
+55 verbose lock tar:///home/cole/.npm/jsonlint/1.6.2/package.tgz /home/cole/.npm/d2d11663-e-npm-jsonlint-1-6-2-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+59 silly gunzTarPerm extractEntry .npmignore
+60 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+63 silly gunzTarPerm extractEntry Makefile
+64 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+65 silly gunzTarPerm extractEntry bower.json
+66 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+67 silly gunzTarPerm extractEntry lib/cli.js
+68 silly gunzTarPerm modified mode [ 'lib/cli.js', 493, 509 ]
+69 silly gunzTarPerm extractEntry lib/formatter.js
+70 silly gunzTarPerm modified mode [ 'lib/formatter.js', 420, 436 ]
+71 silly gunzTarPerm extractEntry lib/jsonlint.js
+72 silly gunzTarPerm modified mode [ 'lib/jsonlint.js', 420, 436 ]
+73 silly gunzTarPerm extractEntry scripts/bundle.js
+74 silly gunzTarPerm modified mode [ 'scripts/bundle.js', 420, 436 ]
+75 silly gunzTarPerm extractEntry src/jsonlint.l
+76 silly gunzTarPerm modified mode [ 'src/jsonlint.l', 420, 436 ]
+77 silly gunzTarPerm extractEntry src/jsonlint.y
+78 silly gunzTarPerm modified mode [ 'src/jsonlint.y', 420, 436 ]
+79 silly gunzTarPerm extractEntry test/all-tests.js
+80 silly gunzTarPerm modified mode [ 'test/all-tests.js', 420, 436 ]
+81 silly gunzTarPerm extractEntry test/fails/26.json
+82 silly gunzTarPerm modified mode [ 'test/fails/26.json', 420, 436 ]
+83 silly gunzTarPerm extractEntry test/fails/10.json
+84 silly gunzTarPerm modified mode [ 'test/fails/10.json', 420, 436 ]
+85 silly gunzTarPerm extractEntry test/fails/12.json
+86 silly gunzTarPerm modified mode [ 'test/fails/12.json', 420, 436 ]
+87 silly gunzTarPerm extractEntry test/fails/13.json
+88 silly gunzTarPerm modified mode [ 'test/fails/13.json', 420, 436 ]
+89 silly gunzTarPerm extractEntry test/fails/14.json
+90 silly gunzTarPerm modified mode [ 'test/fails/14.json', 420, 436 ]
+91 silly gunzTarPerm extractEntry test/fails/15.json
+92 silly gunzTarPerm modified mode [ 'test/fails/15.json', 420, 436 ]
+93 silly gunzTarPerm extractEntry test/fails/16.json
+94 silly gunzTarPerm modified mode [ 'test/fails/16.json', 420, 436 ]
+95 silly gunzTarPerm extractEntry test/fails/17.json
+96 silly gunzTarPerm modified mode [ 'test/fails/17.json', 420, 436 ]
+97 silly gunzTarPerm extractEntry test/fails/19.json
+98 silly gunzTarPerm modified mode [ 'test/fails/19.json', 420, 436 ]
+99 silly gunzTarPerm extractEntry test/fails/2.json
+100 silly gunzTarPerm modified mode [ 'test/fails/2.json', 420, 436 ]
+101 silly gunzTarPerm extractEntry test/fails/20.json
+102 silly gunzTarPerm modified mode [ 'test/fails/20.json', 420, 436 ]
+103 silly gunzTarPerm extractEntry test/fails/21.json
+104 silly gunzTarPerm modified mode [ 'test/fails/21.json', 420, 436 ]
+105 silly gunzTarPerm extractEntry test/fails/22.json
+106 silly gunzTarPerm modified mode [ 'test/fails/22.json', 420, 436 ]
+107 silly gunzTarPerm extractEntry test/fails/23.json
+108 silly gunzTarPerm modified mode [ 'test/fails/23.json', 420, 436 ]
+109 silly gunzTarPerm extractEntry test/fails/24.json
+110 silly gunzTarPerm modified mode [ 'test/fails/24.json', 420, 436 ]
+111 silly gunzTarPerm extractEntry test/fails/25.json
+112 silly gunzTarPerm modified mode [ 'test/fails/25.json', 420, 436 ]
+113 silly gunzTarPerm extractEntry test/fails/11.json
+114 silly gunzTarPerm modified mode [ 'test/fails/11.json', 420, 436 ]
+115 silly gunzTarPerm extractEntry test/fails/27.json
+116 silly gunzTarPerm modified mode [ 'test/fails/27.json', 420, 436 ]
+117 silly gunzTarPerm extractEntry test/fails/28.json
+118 silly gunzTarPerm modified mode [ 'test/fails/28.json', 420, 436 ]
+119 silly gunzTarPerm extractEntry test/fails/29.json
+120 silly gunzTarPerm modified mode [ 'test/fails/29.json', 420, 436 ]
+121 silly gunzTarPerm extractEntry test/fails/3.json
+122 silly gunzTarPerm modified mode [ 'test/fails/3.json', 420, 436 ]
+123 silly gunzTarPerm extractEntry test/fails/30.json
+124 silly gunzTarPerm modified mode [ 'test/fails/30.json', 420, 436 ]
+125 silly gunzTarPerm extractEntry test/fails/31.json
+126 silly gunzTarPerm modified mode [ 'test/fails/31.json', 420, 436 ]
+127 silly gunzTarPerm extractEntry test/fails/32.json
+128 silly gunzTarPerm modified mode [ 'test/fails/32.json', 420, 436 ]
+129 silly gunzTarPerm extractEntry test/fails/33.json
+130 silly gunzTarPerm modified mode [ 'test/fails/33.json', 420, 436 ]
+131 silly gunzTarPerm extractEntry test/fails/34.json
+132 silly gunzTarPerm modified mode [ 'test/fails/34.json', 420, 436 ]
+133 silly gunzTarPerm extractEntry test/fails/4.json
+134 silly gunzTarPerm modified mode [ 'test/fails/4.json', 420, 436 ]
+135 silly gunzTarPerm extractEntry test/fails/5.json
+136 silly gunzTarPerm modified mode [ 'test/fails/5.json', 420, 436 ]
+137 silly gunzTarPerm extractEntry test/fails/6.json
+138 silly gunzTarPerm modified mode [ 'test/fails/6.json', 420, 436 ]
+139 silly gunzTarPerm extractEntry test/fails/7.json
+140 silly gunzTarPerm modified mode [ 'test/fails/7.json', 420, 436 ]
+141 silly gunzTarPerm extractEntry test/fails/8.json
+142 silly gunzTarPerm modified mode [ 'test/fails/8.json', 420, 436 ]
+143 silly gunzTarPerm extractEntry test/fails/9.json
+144 silly gunzTarPerm modified mode [ 'test/fails/9.json', 420, 436 ]
+145 silly gunzTarPerm extractEntry test/passes/1.json
+146 silly gunzTarPerm modified mode [ 'test/passes/1.json', 420, 436 ]
+147 silly gunzTarPerm extractEntry test/passes/2.json
+148 silly gunzTarPerm modified mode [ 'test/passes/2.json', 420, 436 ]
+149 silly gunzTarPerm extractEntry test/passes/3.json
+150 silly gunzTarPerm modified mode [ 'test/passes/3.json', 420, 436 ]
+151 silly gunzTarPerm extractEntry web/json2.js
+152 silly gunzTarPerm modified mode [ 'web/json2.js', 420, 436 ]
+153 silly gunzTarPerm extractEntry web/jsonlint.js
+154 silly gunzTarPerm modified mode [ 'web/jsonlint.js', 420, 436 ]
+155 silly gunzTarPerm extractEntry web/jsonlint.html
+156 silly gunzTarPerm modified mode [ 'web/jsonlint.html', 420, 436 ]
+157 silly lockFile fbd7f77b--home-cole-node-modules-jsonlint tar:///home/cole/node_modules/jsonlint
+158 silly lockFile fbd7f77b--home-cole-node-modules-jsonlint tar:///home/cole/node_modules/jsonlint
+159 silly lockFile d2d11663-e-npm-jsonlint-1-6-2-package-tgz tar:///home/cole/.npm/jsonlint/1.6.2/package.tgz
+160 silly lockFile d2d11663-e-npm-jsonlint-1-6-2-package-tgz tar:///home/cole/.npm/jsonlint/1.6.2/package.tgz
+161 info preinstall jsonlint@1.6.2
+162 verbose readDependencies using package.json deps
+163 verbose readDependencies using package.json deps
+164 verbose cache add [ 'nomnom@>= 1.5.x', null ]
+165 verbose cache add name=undefined spec="nomnom@>= 1.5.x" args=["nomnom@>= 1.5.x",null]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: 'nomnom@%3E=%201.5.x',
+166 verbose parsed url   path: 'nomnom@%3E=%201.5.x',
+166 verbose parsed url   href: 'nomnom@%3E=%201.5.x' }
+167 verbose cache add [ 'JSV@>= 4.0.x', null ]
+168 verbose cache add name=undefined spec="JSV@>= 4.0.x" args=["JSV@>= 4.0.x",null]
+169 verbose parsed url { protocol: null,
+169 verbose parsed url   slashes: null,
+169 verbose parsed url   auth: null,
+169 verbose parsed url   host: null,
+169 verbose parsed url   port: null,
+169 verbose parsed url   hostname: null,
+169 verbose parsed url   hash: null,
+169 verbose parsed url   search: null,
+169 verbose parsed url   query: null,
+169 verbose parsed url   pathname: 'JSV@%3E=%204.0.x',
+169 verbose parsed url   path: 'JSV@%3E=%204.0.x',
+169 verbose parsed url   href: 'JSV@%3E=%204.0.x' }
+170 verbose cache add name="nomnom" spec=">= 1.5.x" args=["nomnom",">= 1.5.x"]
+171 verbose parsed url { protocol: null,
+171 verbose parsed url   slashes: null,
+171 verbose parsed url   auth: null,
+171 verbose parsed url   host: null,
+171 verbose parsed url   port: null,
+171 verbose parsed url   hostname: null,
+171 verbose parsed url   hash: null,
+171 verbose parsed url   search: null,
+171 verbose parsed url   query: null,
+171 verbose parsed url   pathname: '%3E=%201.5.x',
+171 verbose parsed url   path: '%3E=%201.5.x',
+171 verbose parsed url   href: '%3E=%201.5.x' }
+172 verbose addNamed [ 'nomnom', '>= 1.5.x' ]
+173 verbose addNamed [ null, '>=1.5.0-0' ]
+174 silly lockFile 8064bb45-nomnom-1-5-x nomnom@>= 1.5.x
+175 verbose lock nomnom@>= 1.5.x /home/cole/.npm/8064bb45-nomnom-1-5-x.lock
+176 verbose cache add name="JSV" spec=">= 4.0.x" args=["JSV",">= 4.0.x"]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: '%3E=%204.0.x',
+177 verbose parsed url   path: '%3E=%204.0.x',
+177 verbose parsed url   href: '%3E=%204.0.x' }
+178 verbose addNamed [ 'JSV', '>= 4.0.x' ]
+179 verbose addNamed [ null, '>=4.0.0-0' ]
+180 silly lockFile e7455214-JSV-4-0-x JSV@>= 4.0.x
+181 verbose lock JSV@>= 4.0.x /home/cole/.npm/e7455214-JSV-4-0-x.lock
+182 silly addNameRange { name: 'nomnom', range: '>=1.5.0-0', hasData: false }
+183 silly addNameRange { name: 'JSV', range: '>=4.0.0-0', hasData: false }
+184 verbose request where is /nomnom
+185 verbose request registry https://registry.npmjs.org/
+186 verbose url raw /nomnom
+187 verbose url resolving [ 'https://registry.npmjs.org/', './nomnom' ]
+188 verbose url resolved https://registry.npmjs.org/nomnom
+189 verbose request where is https://registry.npmjs.org/nomnom
+190 info trying registry request attempt 1 at 14:49:08
+191 http GET https://registry.npmjs.org/nomnom
+192 verbose request where is /JSV
+193 verbose request registry https://registry.npmjs.org/
+194 verbose url raw /JSV
+195 verbose url resolving [ 'https://registry.npmjs.org/', './JSV' ]
+196 verbose url resolved https://registry.npmjs.org/JSV
+197 verbose request where is https://registry.npmjs.org/JSV
+198 info trying registry request attempt 1 at 14:49:08
+199 http GET https://registry.npmjs.org/JSV
+200 http 200 https://registry.npmjs.org/nomnom
+201 silly registry.get cb [ 200,
+201 silly registry.get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+201 silly registry.get     etag: '"CHEGCX3GQ9AFHMP4FZAE1FGNR"',
+201 silly registry.get     'content-type': 'application/json',
+201 silly registry.get     'content-encoding': 'gzip',
+201 silly registry.get     'cache-control': 'max-age=300',
+201 silly registry.get     'content-length': '6403',
+201 silly registry.get     'accept-ranges': 'bytes',
+201 silly registry.get     date: 'Wed, 07 Sep 2016 18:49:09 GMT',
+201 silly registry.get     via: '1.1 varnish',
+201 silly registry.get     age: '213',
+201 silly registry.get     connection: 'keep-alive',
+201 silly registry.get     'x-served-by': 'cache-iad2624-IAD',
+201 silly registry.get     'x-cache': 'HIT',
+201 silly registry.get     'x-cache-hits': '1',
+201 silly registry.get     'x-timer': 'S1473274149.145804,VS0,VE0',
+201 silly registry.get     vary: 'Accept-Encoding' } ]
+202 http 200 https://registry.npmjs.org/JSV
+203 silly registry.get cb [ 200,
+203 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+203 silly registry.get     etag: '"3W1ZBTGEOL4DSREME90USDVXQ"',
+203 silly registry.get     'content-type': 'application/json',
+203 silly registry.get     'content-encoding': 'gzip',
+203 silly registry.get     'cache-control': 'max-age=300',
+203 silly registry.get     'content-length': '6226',
+203 silly registry.get     'accept-ranges': 'bytes',
+203 silly registry.get     date: 'Wed, 07 Sep 2016 18:49:09 GMT',
+203 silly registry.get     via: '1.1 varnish',
+203 silly registry.get     age: '299',
+203 silly registry.get     connection: 'keep-alive',
+203 silly registry.get     'x-served-by': 'cache-iad2124-IAD',
+203 silly registry.get     'x-cache': 'HIT',
+203 silly registry.get     'x-cache-hits': '1',
+203 silly registry.get     'x-timer': 'S1473274149.145345,VS0,VE0',
+203 silly registry.get     vary: 'Accept-Encoding' } ]
+204 silly addNameRange number 2 { name: 'nomnom', range: '>=1.5.0-0', hasData: true }
+205 silly addNameRange versions [ 'nomnom',
+205 silly addNameRange   [ '0.1.2',
+205 silly addNameRange     '0.1.3',
+205 silly addNameRange     '0.2.0',
+205 silly addNameRange     '0.3.0',
+205 silly addNameRange     '0.4.0',
+205 silly addNameRange     '0.4.1',
+205 silly addNameRange     '0.4.2',
+205 silly addNameRange     '0.4.3',
+205 silly addNameRange     '0.4.4',
+205 silly addNameRange     '0.4.6',
+205 silly addNameRange     '0.4.8',
+205 silly addNameRange     '0.5.0',
+205 silly addNameRange     '0.6.0',
+205 silly addNameRange     '0.6.1',
+205 silly addNameRange     '1.0.0',
+205 silly addNameRange     '1.5.0',
+205 silly addNameRange     '1.5.1',
+205 silly addNameRange     '1.5.2',
+205 silly addNameRange     '1.5.3',
+205 silly addNameRange     '1.6.0',
+205 silly addNameRange     '1.6.1',
+205 silly addNameRange     '1.6.2',
+205 silly addNameRange     '1.7.0',
+205 silly addNameRange     '1.8.0',
+205 silly addNameRange     '1.8.1' ] ]
+206 verbose addNamed [ 'nomnom', '1.8.1' ]
+207 verbose addNamed [ '1.8.1', '1.8.1' ]
+208 silly lockFile 172e638a-nomnom-1-8-1 nomnom@1.8.1
+209 verbose lock nomnom@1.8.1 /home/cole/.npm/172e638a-nomnom-1-8-1.lock
+210 silly addNameRange number 2 { name: 'JSV', range: '>=4.0.0-0', hasData: true }
+211 silly addNameRange versions [ 'JSV', [ '3.5.0', '4.0.0', '4.0.1', '4.0.2' ] ]
+212 verbose addNamed [ 'JSV', '4.0.2' ]
+213 verbose addNamed [ '4.0.2', '4.0.2' ]
+214 silly lockFile 2c4de383-JSV-4-0-2 JSV@4.0.2
+215 verbose lock JSV@4.0.2 /home/cole/.npm/2c4de383-JSV-4-0-2.lock
+216 silly lockFile 8d27338c-pmjs-org-nomnom-nomnom-1-8-1-tgz https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+217 verbose lock https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz /home/cole/.npm/8d27338c-pmjs-org-nomnom-nomnom-1-8-1-tgz.lock
+218 silly lockFile dabff224-stry-npmjs-org-JSV-JSV-4-0-2-tgz https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+219 verbose lock https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz /home/cole/.npm/dabff224-stry-npmjs-org-JSV-JSV-4-0-2-tgz.lock
+220 verbose addRemoteTarball [ 'https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz',
+220 verbose addRemoteTarball   '2151f722472ba79e50a76fc125bb8c8f2e4dc2a7' ]
+221 verbose addRemoteTarball [ 'https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz',
+221 verbose addRemoteTarball   'd077f6825571f82132f9dffaed587b4029feff57' ]
+222 info retry fetch attempt 1 at 14:49:08
+223 verbose fetch to= /tmp/npm-7362-mGF707ah/registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+224 info retry fetch attempt 1 at 14:49:08
+225 verbose fetch to= /tmp/npm-7362-mGF707ah/registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+226 http GET https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+227 http GET https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+228 http 200 https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+229 silly lockFile dabff224-stry-npmjs-org-JSV-JSV-4-0-2-tgz https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+230 silly lockFile dabff224-stry-npmjs-org-JSV-JSV-4-0-2-tgz https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz
+231 silly lockFile 2c4de383-JSV-4-0-2 JSV@4.0.2
+232 silly lockFile 2c4de383-JSV-4-0-2 JSV@4.0.2
+233 silly lockFile e7455214-JSV-4-0-x JSV@>= 4.0.x
+234 silly lockFile e7455214-JSV-4-0-x JSV@>= 4.0.x
+235 http 200 https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+236 silly lockFile 8d27338c-pmjs-org-nomnom-nomnom-1-8-1-tgz https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+237 silly lockFile 8d27338c-pmjs-org-nomnom-nomnom-1-8-1-tgz https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz
+238 silly lockFile 172e638a-nomnom-1-8-1 nomnom@1.8.1
+239 silly lockFile 172e638a-nomnom-1-8-1 nomnom@1.8.1
+240 silly lockFile 8064bb45-nomnom-1-5-x nomnom@>= 1.5.x
+241 silly lockFile 8064bb45-nomnom-1-5-x nomnom@>= 1.5.x
+242 silly resolved [ { name: 'JSV',
+242 silly resolved     version: '4.0.2',
+242 silly resolved     description: 'A JavaScript implementation of a extendable, fully compliant JSON Schema validator.',
+242 silly resolved     homepage: 'http://github.com/garycourt/JSV',
+242 silly resolved     author: { name: 'Gary Court', email: 'gary.court@gmail.com' },
+242 silly resolved     licenses: [ [Object] ],
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     bugs:
+242 silly resolved      { email: 'gary.court@gmail.com',
+242 silly resolved        url: 'http://github.com/garycourt/JSV/issues' },
+242 silly resolved     repositories: [ [Object] ],
+242 silly resolved     dependencies: {},
+242 silly resolved     main: 'lib/jsv.js',
+242 silly resolved     keywords: [ 'json', 'schema', 'validator' ],
+242 silly resolved     _npmUser: { name: 'garycourt', email: 'gary.court@gmail.com' },
+242 silly resolved     _id: 'JSV@4.0.2',
+242 silly resolved     devDependencies: {},
+242 silly resolved     engines: { node: '*' },
+242 silly resolved     _engineSupported: true,
+242 silly resolved     _npmVersion: '1.1.0-beta-4',
+242 silly resolved     _nodeVersion: 'v0.6.6',
+242 silly resolved     _defaultsLoaded: true,
+242 silly resolved     dist:
+242 silly resolved      { shasum: 'd077f6825571f82132f9dffaed587b4029feff57',
+242 silly resolved        tarball: 'https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz' },
+242 silly resolved     readme: 'JSV: JSON Schema Validator\r\n==========================\r\n\r\nJSV is a JavaScript implementation of a extendable, fully compliant JSON Schema validator with the following features:\r\n\r\n*\tThe fastest extendable JSON validator available!\r\n*\tComplete implementation of all current JSON Schema draft revisions.\r\n*\tSupports creating individual environments (sandboxes) that validate using a particular schema specification.\r\n*\tProvides an intuitive API for creating new validating schema attributes, or whole new custom schema schemas.\r\n*\tSupports `self`, `full` and `describedby` hyper links.\r\n*\tValidates itself, and is bootstrapped from the JSON Schema schemas.\r\n*\tIncludes over 1100 unit tests for testing all parts of the specifications.\r\n*\tWorks in all ECMAScript 3 environments, including all web browsers and Node.js.\r\n*\tLicensed under the FreeBSD License, a very open license.\r\n\r\n## It\'s a what?\r\n\r\n**JSON** (an acronym for **JavaScript Object Notation**) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of JavaScript/ECMA-262 3rd Edition. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages. (C, C++, C#, Java, JavaScript, Perl, Python, ...) These properties make JSON an ideal data-interchange language. \\[[json.org](http://json.org)\\]\r\n\r\n**JSON Schema** is a JSON media type for defining the structure of JSON data.  JSON Schema provides a contract for what JSON data is required for a given application and how to interact with it.  JSON Schema is intended to define validation, documentation, hyperlink navigation, and interaction control of JSON data. \\[[draft-zyp-json-schema-02](http://tools.ietf.org/html/draft-zyp-json-schema-02)\\]\r\n\r\nA **JSON validator** is a program that takes JSON data and, with a provided schema, will ensure that the provided JSON is structured in the way defined by the schema. This ensures that if validation has passed, the JSON instance is guaranteed to be in the expected format. It will also provide an explanation on why a particular instance failed validation.\r\n\r\n## Example\r\n\r\nHere\'s an example on how to validate some JSON with JSV:\r\n\r\n\tvar JSV = require("./jsv").JSV;\r\n\tvar json = {};\r\n\tvar schema = {"type" : "object"};\r\n\tvar env = JSV.createEnvironment();\r\n\tvar report = env.validate(json, schema);\r\n\t\r\n\tif (report.errors.length === 0) {\r\n\t\t//JSON is valid against the schema\r\n\t}\r\n\r\nAnother example; for the following test:\r\n\r\n\tenv.validate({ a : 1 }, { type : \'object\', properties : { a : { type : \'string\' }} });\r\n\r\nThe generated report would look like:\r\n\r\n\t{\r\n\t\terrors : [\r\n\t\t\t{\r\n\t\t\t\tmessage : "Instance is not a required type",\r\n\t\t\t\turi : "urn:uuid:74b843b5-3aa4-44e9-b7bc-f555936fa823#/a",\r\n\t\t\t\tschemaUri : "urn:uuid:837fdefe-3bd4-4993-9a20-38a6a0624d5a#/properties/a",\r\n\t\t\t\tattribute : "type",\r\n\t\t\t\tdetails : ["string"]\r\n\t\t\t}\r\n\t\t],\r\n\t\tvalidated : {\r\n\t\t\t"urn:uuid:74b843b5-3aa4-44e9-b7bc-f555936fa823#" : ["urn:uuid:837fdefe-3bd4-4993-9a20-38a6a0624d5a#"],\r\n\t\t\t"urn:uuid:74b843b5-3aa4-44e9-b7bc-f555936fa823#/a" : ["urn:uuid:837fdefe-3bd4-4993-9a20-38a6a0624d5a#/properties/a"],\r\n\t\t\t//...\r\n\t\t},\r\n\t\tinstance : [JSONInstance object],\r\n\t\tschema : [JSONSchema object],\r\n\t\tschemaSchema : [JSONSchema object]\r\n\t}\r\n\r\n## Environments & JSON Schema support\r\n\r\nThere is no one way to validate JSON, just like there is no one way to validate XML. Even the JSON Schema specification has gone through several revisions which are not 100% backwards compatible with each other. To solve the issue of using numerous schemas already written to older specifications, JSV provides customizable environments to validate your JSON within. \r\n\r\nWhen creating an environment, you can optionally specify how you want that environment to behave. For example, this allows you to specify which version of the JSON Schema you would like the environment to behave like. JSV already provides the following environments:\r\n\r\n*\t`json-schema-draft-03`\r\n\r\n\tA complete implementation of the [third revision](http://tools.ietf.org/html/draft-zyp-json-schema-03) of the JSON Schema specification. This is the same as the second revision, except:\r\n\t\r\n\t*\t"optional" has been replaced by "required"\r\n\t*\t"requires" has been replaced by "dependencies"\r\n\t*\t"minimumCanEqual"/"maximumCanEqual" has been replaced by "exclusiveMinimum"/"exclusiveMaximum"\r\n\t*\t"self"/"full"/"describedby" links have been moved to the core schema, and are provided by "id"/"$ref"/"$schema"\r\n\t*\tAdds the attributes "patternSchema" and "additionalItems"\r\n\t*\tDeprecates the attributes "root" and "alternate"\r\n\t*\tSchemas are now versioned under the URIs "http://json-schema.org/draft-XX/", where XX is the draft number\r\n\t\r\n\tIn addition to this, all schemas from the previous versions of the JSON Schema draft are included in this environment, and are backwards compatible (where possible) with it\'s previous version.\r\n\tThis backwards compatibility can be disabled with the environment option `strict` is set to `true`.\r\n\t\r\n\tThis is currently the default environment.\r\n\r\n*\t`json-schema-draft-02`\r\n\r\n\tA complete implementation of the [second revision](http://tools.ietf.org/html/draft-zyp-json-schema-02) of the JSON Schema specification. This is the same as the first revision, except adds:\r\n\t\r\n\t*\t"targetSchema" attribute\r\n\t*\tslash-delimited fragment identifiers, which is now the default behavior\r\n\t\r\n*\t`json-schema-draft-01`\r\n\r\n\tA complete implementation of the [first revision](http://tools.ietf.org/html/draft-zyp-json-schema-01) of the JSON Schema specification, which is exactly the same as the [original draft](http://tools.ietf.org/html/draft-zyp-json-schema-00).\r\n\t\r\n\tUsers with JSON Schemas written for JSV < v2.1 should use this environment for it\'s dot-delimited fragment identifiers.\r\n\r\nEnvironments can also be customized and registered for multiple reuse. (See the section on *Extending Environments* below)\r\n\r\n## Validation API\r\n\r\nThe following methods are used to validate JSON data:\r\n\r\n### JSV.createEnvironment(*environmentID?*) *->* *&lt;Environment&gt;*\r\n\r\n*\t*environmentID* *&lt;String&gt;* *(optional)* The ID of the environment to clone a new Environment from\r\n\r\nCreates an new environment that is a copy of the Environment registered with the provided `environmentID`. If no ID is provided, the latest registered JSON Schema is used as the template.\r\n\r\nSee the above section on *Environments* for the default available Environment IDs.\r\n\r\n### *&lt;Environment&gt;*.validate(*json*, *schema*) *->* *&lt;Report&gt;*\r\n\r\n*\t*json* *&lt;Any|JSONInstance&gt;* The JSON data to validate\r\n*\t*schema* *&lt;Object|JSONInstance|JSONSchema&gt;* The schema to validate the JSON with\r\n\r\nValidates both the schema and the JSON, and returns a report of the validation.\r\n\r\n### *&lt;Report&gt;*.errors *&lt;Array&gt;*\r\n\r\nAn array of error objects from the validation process; each object represents a restriction check that failed. If the array is empty, the validation passed.\r\n\r\nThe error objects have the following schema:\r\n\r\n\t{\r\n\t\t"type" : "object",\r\n\t\t"properties" : {\r\n\t\t\t"message" : {\r\n\t\t\t\t"description" : "A user-friendly error message about what failed to validate.",\r\n\t\t\t\t"type" : "string"\r\n\t\t\t},\r\n\t\t\t"uri" : {\r\n\t\t\t\t"description" : "URI of the instance that failed to validate.",\r\n\t\t\t\t"type" : "string",\r\n\t\t\t\t"format" : "uri"\r\n\t\t\t},\r\n\t\t\t"schemaUri" : {\r\n\t\t\t\t"description" : "URI of the schema instance that reported the error.",\r\n\t\t\t\t"type" : "string",\r\n\t\t\t\t"format" : "uri"\r\n\t\t\t},\r\n\t\t\t"attribute" : {\r\n\t\t\t\t"description" : "The attribute of the schema instance that failed to validate.",\r\n\t\t\t\t"type" : "string"\r\n\t\t\t},\r\n\t\t\t"details" : {\r\n\t\t\t\t"description" : "The value of the schema attribute that failed to validate.",\r\n\t\t\t\t"type" : "any"\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\r\n## API Documentation\r\n\r\nThere are many more APIs available for JSV, too many to detail here. The complete API and documentation can be found in the `docs` directory.\r\n\r\n## Extending Environments\r\n\r\nJSV provides an API for extending available schemas, adding new attributes and validation to currently existing schemas, and creating whole new Environments with unique behaviors. \r\nIn fact, in the [eat-your-own-dog-food](http://en.wikipedia.org/wiki/Eating_your_own_dog_food) approach, all the default JSON Schema environments available are implemented using this API. \r\nDetails and instruction on this feature will be provided at a later date.\r\n\r\n## Installation\r\n\r\nThe preferred method of installation is to download the latest copy from GitHub:\r\n\r\n\tgit clone git://github.com/garycourt/JSV.git\r\n\r\nIf you are using JSV within Node.js, you can quickly install it using:\r\n\r\n\tnpm install JSV\r\n\r\nThen you can reference it within your application using:\r\n\r\n\tvar JSV = require("JSV").JSV;\r\n\r\n## Unit Tests\r\n\r\nOpen `tests/index.html` and `tests/index3.html` in your web browser to run the unit tests.\r\n\r\nCurrently, the unit tests can not be run in Node.js.\r\n\r\n## License\r\n\r\n\tCopyright 2010 Gary Court. All rights reserved.\r\n\t\r\n\tRedistribution and use in source and binary forms, with or without modification, are\r\n\tpermitted provided that the following conditions are met:\r\n\t\r\n\t   1. Redistributions of source code must retain the above copyright notice, this list of\r\n\t      conditions and the following disclaimer.\r\n\t\r\n\t   2. Redistributions in binary form must reproduce the above copyright notice, this list\r\n\t      of conditions and the following disclaimer in the documentation and/or other materials\r\n\t      provided with the distribution.\r\n\t\r\n\tTHIS SOFTWARE IS PROVIDED BY GARY COURT ``AS IS\'\' AND ANY EXPRESS OR IMPLIED\r\n\tWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\r\n\tFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL GARY COURT OR\r\n\tCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\r\n\tCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\r\n\tSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\r\n\tANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\r\n\tNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\r\n\tADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\t\r\n\tThe views and conclusions contained in the software and documentation are those of the\r\n\tauthors and should not be interpreted as representing official policies, either expressed\r\n\tor implied, of Gary Court or the JSON Schema specification.',
+242 silly resolved     directories: {},
+242 silly resolved     _shasum: 'd077f6825571f82132f9dffaed587b4029feff57',
+242 silly resolved     _from: 'JSV@>= 4.0.x',
+242 silly resolved     _resolved: 'https://registry.npmjs.org/JSV/-/JSV-4.0.2.tgz' },
+242 silly resolved   { name: 'nomnom',
+242 silly resolved     description: 'Option parser with generated usage and commands',
+242 silly resolved     version: '1.8.1',
+242 silly resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+242 silly resolved     scripts: { test: 'nodeunit test/*.js' },
+242 silly resolved     repository: { type: 'git', url: 'http://github.com/harthur/nomnom.git' },
+242 silly resolved     main: './nomnom',
+242 silly resolved     keywords:
+242 silly resolved      [ 'arguments',
+242 silly resolved        'option parser',
+242 silly resolved        'command line',
+242 silly resolved        'options',
+242 silly resolved        'parser' ],
+242 silly resolved     dependencies: { underscore: '~1.6.0', chalk: '~0.4.0' },
+242 silly resolved     devDependencies: { nodeunit: '~0.7.4' },
+242 silly resolved     bugs: { url: 'https://github.com/harthur/nomnom/issues' },
+242 silly resolved     homepage: 'https://github.com/harthur/nomnom',
+242 silly resolved     _id: 'nomnom@1.8.1',
+242 silly resolved     dist:
+242 silly resolved      { shasum: '2151f722472ba79e50a76fc125bb8c8f2e4dc2a7',
+242 silly resolved        tarball: 'https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz' },
+242 silly resolved     _from: 'nomnom@>= 1.5.x',
+242 silly resolved     _npmVersion: '1.4.3',
+242 silly resolved     _npmUser: { name: 'harth', email: 'fayearthur@gmail.com' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     directories: {},
+242 silly resolved     _shasum: '2151f722472ba79e50a76fc125bb8c8f2e4dc2a7',
+242 silly resolved     _resolved: 'https://registry.npmjs.org/nomnom/-/nomnom-1.8.1.tgz' } ]
+243 info install JSV@4.0.2 into /home/cole/node_modules/jsonlint
+244 info install nomnom@1.8.1 into /home/cole/node_modules/jsonlint
+245 info installOne JSV@4.0.2
+246 info installOne nomnom@1.8.1
+247 verbose node_modules/jsonlint/node_modules/JSV unbuild
+248 verbose node_modules/jsonlint/node_modules/nomnom unbuild
+249 verbose tar unpack /home/cole/.npm/JSV/4.0.2/package.tgz
+250 silly lockFile aac9ff3d-odules-jsonlint-node-modules-JSV tar:///home/cole/node_modules/jsonlint/node_modules/JSV
+251 verbose lock tar:///home/cole/node_modules/jsonlint/node_modules/JSV /home/cole/.npm/aac9ff3d-odules-jsonlint-node-modules-JSV.lock
+252 silly lockFile dc3356b7-e-cole-npm-JSV-4-0-2-package-tgz tar:///home/cole/.npm/JSV/4.0.2/package.tgz
+253 verbose lock tar:///home/cole/.npm/JSV/4.0.2/package.tgz /home/cole/.npm/dc3356b7-e-cole-npm-JSV-4-0-2-package-tgz.lock
+254 verbose tar unpack /home/cole/.npm/nomnom/1.8.1/package.tgz
+255 silly lockFile b43387cd-les-jsonlint-node-modules-nomnom tar:///home/cole/node_modules/jsonlint/node_modules/nomnom
+256 verbose lock tar:///home/cole/node_modules/jsonlint/node_modules/nomnom /home/cole/.npm/b43387cd-les-jsonlint-node-modules-nomnom.lock
+257 silly lockFile 2e399849-ole-npm-nomnom-1-8-1-package-tgz tar:///home/cole/.npm/nomnom/1.8.1/package.tgz
+258 verbose lock tar:///home/cole/.npm/nomnom/1.8.1/package.tgz /home/cole/.npm/2e399849-ole-npm-nomnom-1-8-1-package-tgz.lock
+259 silly gunzTarPerm modes [ '775', '664' ]
+260 silly gunzTarPerm modes [ '775', '664' ]
+261 silly gunzTarPerm extractEntry lib/
+262 silly gunzTarPerm modified mode [ 'lib/', 493, 509 ]
+263 silly gunzTarPerm extractEntry package.json
+264 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+265 silly gunzTarPerm extractEntry lib/json-schema-draft-03.js
+266 silly gunzTarPerm modified mode [ 'lib/json-schema-draft-03.js', 420, 436 ]
+267 silly gunzTarPerm extractEntry lib/uri/
+268 silly gunzTarPerm modified mode [ 'lib/uri/', 493, 509 ]
+269 silly gunzTarPerm extractEntry .npmignore
+270 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+273 silly gunzTarPerm extractEntry lib/uri/schemes/
+274 silly gunzTarPerm modified mode [ 'lib/uri/schemes/', 493, 509 ]
+275 silly gunzTarPerm extractEntry lib/uri/schemes/urn.js
+276 silly gunzTarPerm modified mode [ 'lib/uri/schemes/urn.js', 420, 436 ]
+277 silly gunzTarPerm extractEntry LICENSE
+278 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+279 silly gunzTarPerm extractEntry nomnom.js
+280 silly gunzTarPerm modified mode [ 'nomnom.js', 420, 436 ]
+281 silly gunzTarPerm extractEntry test.js
+282 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+283 silly gunzTarPerm extractEntry num-vals-fix.diff
+284 silly gunzTarPerm modified mode [ 'num-vals-fix.diff', 420, 436 ]
+285 silly gunzTarPerm extractEntry test/callback.js
+286 silly gunzTarPerm modified mode [ 'test/callback.js', 420, 436 ]
+287 silly gunzTarPerm extractEntry test/commands.js
+288 silly gunzTarPerm modified mode [ 'test/commands.js', 420, 436 ]
+289 silly gunzTarPerm extractEntry test/expected.js
+290 silly gunzTarPerm modified mode [ 'test/expected.js', 420, 436 ]
+291 silly gunzTarPerm extractEntry test/matching.js
+292 silly gunzTarPerm modified mode [ 'test/matching.js', 420, 436 ]
+293 silly gunzTarPerm extractEntry test/option.js
+294 silly gunzTarPerm modified mode [ 'test/option.js', 420, 436 ]
+295 silly gunzTarPerm extractEntry test/transform.js
+296 silly gunzTarPerm modified mode [ 'test/transform.js', 420, 436 ]
+297 silly gunzTarPerm extractEntry test/usage.js
+298 silly gunzTarPerm modified mode [ 'test/usage.js', 420, 436 ]
+299 silly gunzTarPerm extractEntry test/values.js
+300 silly gunzTarPerm modified mode [ 'test/values.js', 420, 436 ]
+301 silly gunzTarPerm extractEntry lib/uri/uri.js
+302 silly gunzTarPerm modified mode [ 'lib/uri/uri.js', 420, 436 ]
+303 silly gunzTarPerm extractEntry lib/jsv.js
+304 silly gunzTarPerm modified mode [ 'lib/jsv.js', 420, 436 ]
+305 silly gunzTarPerm extractEntry lib/environments.js
+306 silly gunzTarPerm modified mode [ 'lib/environments.js', 420, 436 ]
+307 silly gunzTarPerm extractEntry lib/json-schema-draft-02.js
+308 silly gunzTarPerm modified mode [ 'lib/json-schema-draft-02.js', 420, 436 ]
+309 silly gunzTarPerm extractEntry lib/json-schema-draft-01.js
+310 silly gunzTarPerm modified mode [ 'lib/json-schema-draft-01.js', 420, 436 ]
+311 silly gunzTarPerm extractEntry package.json
+312 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+313 silly gunzTarPerm extractEntry README.md
+314 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+315 silly gunzTarPerm extractEntry .project
+316 silly gunzTarPerm modified mode [ '.project', 420, 436 ]
+317 silly gunzTarPerm extractEntry examples/
+318 silly gunzTarPerm modified mode [ 'examples/', 493, 509 ]
+319 silly gunzTarPerm extractEntry examples/index.html
+320 silly gunzTarPerm modified mode [ 'examples/index.html', 420, 436 ]
+321 silly gunzTarPerm extractEntry docs/
+322 silly gunzTarPerm modified mode [ 'docs/', 493, 509 ]
+323 silly gunzTarPerm extractEntry docs/index.html
+324 silly gunzTarPerm modified mode [ 'docs/index.html', 420, 436 ]
+325 silly lockFile b43387cd-les-jsonlint-node-modules-nomnom tar:///home/cole/node_modules/jsonlint/node_modules/nomnom
+326 silly lockFile b43387cd-les-jsonlint-node-modules-nomnom tar:///home/cole/node_modules/jsonlint/node_modules/nomnom
+327 silly lockFile 2e399849-ole-npm-nomnom-1-8-1-package-tgz tar:///home/cole/.npm/nomnom/1.8.1/package.tgz
+328 silly lockFile 2e399849-ole-npm-nomnom-1-8-1-package-tgz tar:///home/cole/.npm/nomnom/1.8.1/package.tgz
+329 info preinstall nomnom@1.8.1
+330 verbose readDependencies using package.json deps
+331 verbose readDependencies using package.json deps
+332 verbose cache add [ 'underscore@~1.6.0', null ]
+333 verbose cache add name=undefined spec="underscore@~1.6.0" args=["underscore@~1.6.0",null]
+334 verbose parsed url { protocol: null,
+334 verbose parsed url   slashes: null,
+334 verbose parsed url   auth: null,
+334 verbose parsed url   host: null,
+334 verbose parsed url   port: null,
+334 verbose parsed url   hostname: null,
+334 verbose parsed url   hash: null,
+334 verbose parsed url   search: null,
+334 verbose parsed url   query: null,
+334 verbose parsed url   pathname: 'underscore@~1.6.0',
+334 verbose parsed url   path: 'underscore@~1.6.0',
+334 verbose parsed url   href: 'underscore@~1.6.0' }
+335 verbose cache add [ 'chalk@~0.4.0', null ]
+336 verbose cache add name=undefined spec="chalk@~0.4.0" args=["chalk@~0.4.0",null]
+337 verbose parsed url { protocol: null,
+337 verbose parsed url   slashes: null,
+337 verbose parsed url   auth: null,
+337 verbose parsed url   host: null,
+337 verbose parsed url   port: null,
+337 verbose parsed url   hostname: null,
+337 verbose parsed url   hash: null,
+337 verbose parsed url   search: null,
+337 verbose parsed url   query: null,
+337 verbose parsed url   pathname: 'chalk@~0.4.0',
+337 verbose parsed url   path: 'chalk@~0.4.0',
+337 verbose parsed url   href: 'chalk@~0.4.0' }
+338 verbose cache add name="underscore" spec="~1.6.0" args=["underscore","~1.6.0"]
+339 verbose parsed url { protocol: null,
+339 verbose parsed url   slashes: null,
+339 verbose parsed url   auth: null,
+339 verbose parsed url   host: null,
+339 verbose parsed url   port: null,
+339 verbose parsed url   hostname: null,
+339 verbose parsed url   hash: null,
+339 verbose parsed url   search: null,
+339 verbose parsed url   query: null,
+339 verbose parsed url   pathname: '~1.6.0',
+339 verbose parsed url   path: '~1.6.0',
+339 verbose parsed url   href: '~1.6.0' }
+340 verbose addNamed [ 'underscore', '~1.6.0' ]
+341 verbose addNamed [ null, '>=1.6.0-0 <1.7.0-0' ]
+342 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+343 verbose lock underscore@~1.6.0 /home/cole/.npm/03145d98-underscore-1-6-0.lock
+344 verbose cache add name="chalk" spec="~0.4.0" args=["chalk","~0.4.0"]
+345 verbose parsed url { protocol: null,
+345 verbose parsed url   slashes: null,
+345 verbose parsed url   auth: null,
+345 verbose parsed url   host: null,
+345 verbose parsed url   port: null,
+345 verbose parsed url   hostname: null,
+345 verbose parsed url   hash: null,
+345 verbose parsed url   search: null,
+345 verbose parsed url   query: null,
+345 verbose parsed url   pathname: '~0.4.0',
+345 verbose parsed url   path: '~0.4.0',
+345 verbose parsed url   href: '~0.4.0' }
+346 verbose addNamed [ 'chalk', '~0.4.0' ]
+347 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+348 silly lockFile bc9fb696-chalk-0-4-0 chalk@~0.4.0
+349 verbose lock chalk@~0.4.0 /home/cole/.npm/bc9fb696-chalk-0-4-0.lock
+350 silly addNameRange { name: 'underscore',
+350 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+350 silly addNameRange   hasData: false }
+351 silly addNameRange { name: 'chalk', range: '>=0.4.0-0 <0.5.0-0', hasData: false }
+352 verbose request where is /underscore
+353 verbose request registry https://registry.npmjs.org/
+354 verbose url raw /underscore
+355 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+356 verbose url resolved https://registry.npmjs.org/underscore
+357 verbose request where is https://registry.npmjs.org/underscore
+358 info trying registry request attempt 1 at 14:49:08
+359 http GET https://registry.npmjs.org/underscore
+360 silly gunzTarPerm extractEntry docs/symbols/
+361 silly gunzTarPerm modified mode [ 'docs/symbols/', 493, 509 ]
+362 silly gunzTarPerm extractEntry docs/symbols/Error.html
+363 silly gunzTarPerm modified mode [ 'docs/symbols/Error.html', 420, 436 ]
+364 silly gunzTarPerm extractEntry docs/symbols/JSONSchema.html
+365 silly gunzTarPerm modified mode [ 'docs/symbols/JSONSchema.html', 420, 436 ]
+366 silly gunzTarPerm extractEntry docs/symbols/InitializationError.html
+367 silly gunzTarPerm modified mode [ 'docs/symbols/InitializationError.html', 420, 436 ]
+368 silly gunzTarPerm extractEntry docs/symbols/JSONInstance.html
+369 silly gunzTarPerm modified mode [ 'docs/symbols/JSONInstance.html', 420, 436 ]
+370 silly gunzTarPerm extractEntry docs/symbols/JSV.html
+371 silly gunzTarPerm modified mode [ 'docs/symbols/JSV.html', 420, 436 ]
+372 silly gunzTarPerm extractEntry docs/symbols/src/
+373 silly gunzTarPerm modified mode [ 'docs/symbols/src/', 493, 509 ]
+374 silly gunzTarPerm extractEntry docs/symbols/src/jsv.js.html
+375 silly gunzTarPerm modified mode [ 'docs/symbols/src/jsv.js.html', 420, 436 ]
+376 silly gunzTarPerm extractEntry docs/symbols/Report.html
+377 silly gunzTarPerm modified mode [ 'docs/symbols/Report.html', 420, 436 ]
+378 silly gunzTarPerm extractEntry docs/symbols/_global_.html
+379 silly gunzTarPerm modified mode [ 'docs/symbols/_global_.html', 420, 436 ]
+380 silly gunzTarPerm extractEntry docs/symbols/Environment.html
+381 silly gunzTarPerm modified mode [ 'docs/symbols/Environment.html', 420, 436 ]
+382 silly gunzTarPerm extractEntry docs/symbols/ValidationError.html
+383 silly gunzTarPerm modified mode [ 'docs/symbols/ValidationError.html', 420, 436 ]
+384 silly gunzTarPerm extractEntry docs/files.html
+385 silly gunzTarPerm modified mode [ 'docs/files.html', 420, 436 ]
+386 silly gunzTarPerm extractEntry jsdoc-toolkit/
+387 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/', 493, 509 ]
+388 silly gunzTarPerm extractEntry jsdoc-toolkit/jsrun.sh
+389 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/jsrun.sh', 420, 436 ]
+390 silly gunzTarPerm extractEntry jsdoc-toolkit/java/
+391 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/', 493, 509 ]
+392 silly gunzTarPerm extractEntry jsdoc-toolkit/java/build.xml
+393 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/build.xml', 420, 436 ]
+394 silly gunzTarPerm extractEntry jsdoc-toolkit/java/src/
+395 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/src/', 493, 509 ]
+396 silly gunzTarPerm extractEntry jsdoc-toolkit/java/src/JsDebugRun.java
+397 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/src/JsDebugRun.java', 420, 436 ]
+398 silly gunzTarPerm extractEntry jsdoc-toolkit/java/src/JsRun.java
+399 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/src/JsRun.java', 420, 436 ]
+400 silly gunzTarPerm extractEntry jsdoc-toolkit/java/build_1.4.xml
+401 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/build_1.4.xml', 420, 436 ]
+402 silly gunzTarPerm extractEntry jsdoc-toolkit/java/classes/
+403 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/classes/', 493, 509 ]
+404 silly gunzTarPerm extractEntry jsdoc-toolkit/java/classes/js.jar
+405 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/java/classes/js.jar', 420, 436 ]
+406 http 200 https://registry.npmjs.org/underscore
+407 silly registry.get cb [ 200,
+407 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+407 silly registry.get     etag: '"EXSGC9XN4BY9ZERJQY6818XUF"',
+407 silly registry.get     'content-type': 'application/json',
+407 silly registry.get     'content-encoding': 'gzip',
+407 silly registry.get     'cache-control': 'max-age=300',
+407 silly registry.get     'content-length': '7956',
+407 silly registry.get     'accept-ranges': 'bytes',
+407 silly registry.get     date: 'Wed, 07 Sep 2016 18:49:09 GMT',
+407 silly registry.get     via: '1.1 varnish',
+407 silly registry.get     age: '124',
+407 silly registry.get     connection: 'keep-alive',
+407 silly registry.get     'x-served-by': 'cache-iad2622-IAD',
+407 silly registry.get     'x-cache': 'HIT',
+407 silly registry.get     'x-cache-hits': '5',
+407 silly registry.get     'x-timer': 'S1473274149.477234,VS0,VE0',
+407 silly registry.get     vary: 'Accept-Encoding' } ]
+408 silly addNameRange number 2 { name: 'underscore',
+408 silly addNameRange   range: '>=1.6.0-0 <1.7.0-0',
+408 silly addNameRange   hasData: true }
+409 silly addNameRange versions [ 'underscore',
+409 silly addNameRange   [ '1.0.3',
+409 silly addNameRange     '1.0.4',
+409 silly addNameRange     '1.1.0',
+409 silly addNameRange     '1.1.1',
+409 silly addNameRange     '1.1.2',
+409 silly addNameRange     '1.1.3',
+409 silly addNameRange     '1.1.4',
+409 silly addNameRange     '1.1.5',
+409 silly addNameRange     '1.1.6',
+409 silly addNameRange     '1.1.7',
+409 silly addNameRange     '1.2.0',
+409 silly addNameRange     '1.2.1',
+409 silly addNameRange     '1.2.2',
+409 silly addNameRange     '1.2.3',
+409 silly addNameRange     '1.2.4',
+409 silly addNameRange     '1.3.0',
+409 silly addNameRange     '1.3.1',
+409 silly addNameRange     '1.3.2',
+409 silly addNameRange     '1.3.3',
+409 silly addNameRange     '1.4.0',
+409 silly addNameRange     '1.4.1',
+409 silly addNameRange     '1.4.2',
+409 silly addNameRange     '1.4.3',
+409 silly addNameRange     '1.4.4',
+409 silly addNameRange     '1.5.0',
+409 silly addNameRange     '1.5.1',
+409 silly addNameRange     '1.5.2',
+409 silly addNameRange     '1.6.0',
+409 silly addNameRange     '1.7.0',
+409 silly addNameRange     '1.8.0',
+409 silly addNameRange     '1.8.1',
+409 silly addNameRange     '1.8.2',
+409 silly addNameRange     '1.8.3' ] ]
+410 verbose addNamed [ 'underscore', '1.6.0' ]
+411 verbose addNamed [ '1.6.0', '1.6.0' ]
+412 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+413 verbose lock underscore@1.6.0 /home/cole/.npm/96960ed1-underscore-1-6-0.lock
+414 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+415 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz /home/cole/.npm/a02bf4de--underscore-underscore-1-6-0-tgz.lock
+416 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz',
+416 verbose addRemoteTarball   '8b38b10cacdef63337b8b24e4ff86d45aea529a8' ]
+417 verbose request where is /chalk
+418 verbose request registry https://registry.npmjs.org/
+419 verbose url raw /chalk
+420 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+421 verbose url resolved https://registry.npmjs.org/chalk
+422 verbose request where is https://registry.npmjs.org/chalk
+423 info trying registry request attempt 1 at 14:49:08
+424 verbose etag "10CFU3WA964Z6GFEULNXSFISH"
+425 http GET https://registry.npmjs.org/chalk
+426 info retry fetch attempt 1 at 14:49:08
+427 verbose fetch to= /tmp/npm-7362-mGF707ah/registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+428 http GET https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+429 silly gunzTarPerm extractEntry jsdoc-toolkit/changes.txt
+430 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/changes.txt', 420, 436 ]
+431 silly gunzTarPerm extractEntry jsdoc-toolkit/conf/
+432 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/conf/', 493, 509 ]
+433 silly gunzTarPerm extractEntry jsdoc-toolkit/conf/sample.conf
+434 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/conf/sample.conf', 420, 436 ]
+435 silly gunzTarPerm extractEntry jsdoc-toolkit/jsrun.jar
+436 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/jsrun.jar', 420, 436 ]
+437 silly gunzTarPerm extractEntry jsdoc-toolkit/jsdebug.jar
+438 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/jsdebug.jar', 420, 436 ]
+439 silly gunzTarPerm extractEntry jsdoc-toolkit/README.txt
+440 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/README.txt', 420, 436 ]
+441 silly gunzTarPerm extractEntry jsdoc-toolkit/app/
+442 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/', 493, 509 ]
+443 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/
+444 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/', 493, 509 ]
+445 http 200 https://registry.npmjs.org/chalk
+446 silly registry.get cb [ 200,
+446 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+446 silly registry.get     etag: '"3HNZQ1MMZ90GHTVA3XCJTGQ3N"',
+446 silly registry.get     'content-type': 'application/json',
+446 silly registry.get     'content-encoding': 'gzip',
+446 silly registry.get     'cache-control': 'max-age=300',
+446 silly registry.get     'content-length': '9102',
+446 silly registry.get     'accept-ranges': 'bytes',
+446 silly registry.get     date: 'Wed, 07 Sep 2016 18:49:09 GMT',
+446 silly registry.get     via: '1.1 varnish',
+446 silly registry.get     age: '58',
+446 silly registry.get     connection: 'keep-alive',
+446 silly registry.get     'x-served-by': 'cache-iad2626-IAD',
+446 silly registry.get     'x-cache': 'HIT',
+446 silly registry.get     'x-cache-hits': '4',
+446 silly registry.get     'x-timer': 'S1473274149.525035,VS0,VE0',
+446 silly registry.get     vary: 'Accept-Encoding' } ]
+447 http 200 https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+448 silly addNameRange number 2 { name: 'chalk', range: '>=0.4.0-0 <0.5.0-0', hasData: true }
+449 silly addNameRange versions [ 'chalk',
+449 silly addNameRange   [ '0.1.0',
+449 silly addNameRange     '0.1.1',
+449 silly addNameRange     '0.2.0',
+449 silly addNameRange     '0.2.1',
+449 silly addNameRange     '0.3.0',
+449 silly addNameRange     '0.4.0',
+449 silly addNameRange     '0.5.0',
+449 silly addNameRange     '0.5.1',
+449 silly addNameRange     '1.0.0',
+449 silly addNameRange     '1.1.0',
+449 silly addNameRange     '1.1.1',
+449 silly addNameRange     '1.1.2',
+449 silly addNameRange     '1.1.3' ] ]
+450 verbose addNamed [ 'chalk', '0.4.0' ]
+451 verbose addNamed [ '0.4.0', '0.4.0' ]
+452 silly lockFile 1efe4790-chalk-0-4-0 chalk@0.4.0
+453 verbose lock chalk@0.4.0 /home/cole/.npm/1efe4790-chalk-0-4-0.lock
+454 silly lockFile dfeec560--npmjs-org-chalk-chalk-0-4-0-tgz https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+455 verbose lock https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz /home/cole/.npm/dfeec560--npmjs-org-chalk-chalk-0-4-0-tgz.lock
+456 verbose addRemoteTarball [ 'https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz',
+456 verbose addRemoteTarball   '5199a3ddcd0c1efe23bc08c1b027b06176e0c64f' ]
+457 info retry fetch attempt 1 at 14:49:08
+458 verbose fetch to= /tmp/npm-7362-mGF707ah/registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+459 http GET https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+460 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+461 silly lockFile a02bf4de--underscore-underscore-1-6-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.6.0.tgz
+462 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+463 silly lockFile 96960ed1-underscore-1-6-0 underscore@1.6.0
+464 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+465 silly lockFile 03145d98-underscore-1-6-0 underscore@~1.6.0
+466 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/frameworkPrototype.js
+467 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/frameworkPrototype.js', 420, 436 ]
+468 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/tagParamConfig.js
+469 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/tagParamConfig.js', 420, 436 ]
+470 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/functionCall.js
+471 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/functionCall.js', 420, 436 ]
+472 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/publishSrcHilite.js
+473 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/publishSrcHilite.js', 420, 436 ]
+474 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/symbolLink.js
+475 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/symbolLink.js', 420, 436 ]
+476 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/commentSrcJson.js
+477 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/commentSrcJson.js', 420, 436 ]
+478 silly gunzTarPerm extractEntry jsdoc-toolkit/app/plugins/tagSynonyms.js
+479 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/plugins/tagSynonyms.js', 420, 436 ]
+480 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/
+481 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/', 493, 509 ]
+482 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC.js
+483 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC.js', 420, 436 ]
+484 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/
+485 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/', 493, 509 ]
+486 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Walker.js
+487 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Walker.js', 420, 436 ]
+488 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Parser.js
+489 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Parser.js', 420, 436 ]
+490 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/DocComment.js
+491 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/DocComment.js', 420, 436 ]
+492 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/SymbolSet.js
+493 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/SymbolSet.js', 420, 436 ]
+494 http 200 https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+495 silly lockFile dfeec560--npmjs-org-chalk-chalk-0-4-0-tgz https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+496 silly lockFile dfeec560--npmjs-org-chalk-chalk-0-4-0-tgz https://registry.npmjs.org/chalk/-/chalk-0.4.0.tgz
+497 silly lockFile 1efe4790-chalk-0-4-0 chalk@0.4.0
+498 silly lockFile 1efe4790-chalk-0-4-0 chalk@0.4.0
+499 silly lockFile bc9fb696-chalk-0-4-0 chalk@~0.4.0
+500 silly lockFile bc9fb696-chalk-0-4-0 chalk@~0.4.0
+501 verbose about to build /home/cole/node_modules/jsonlint/node_modules/nomnom
+502 verbose node_modules/jsonlint/node_modules/nomnom unbuild
+503 info preuninstall nomnom@1.8.1
+504 info uninstall nomnom@1.8.1
+505 verbose false,/home/cole/node_modules,/home/cole/node_modules/jsonlint/node_modules unbuild nomnom@1.8.1
+506 info postuninstall nomnom@1.8.1
+507 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/PluginManager.js
+508 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/PluginManager.js', 420, 436 ]
+509 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Token.js
+510 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Token.js', 420, 436 ]
+511 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Util.js
+512 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Util.js', 420, 436 ]
+513 verbose about to build /home/cole/node_modules/jsonlint
+514 verbose node_modules/jsonlint unbuild
+515 info preuninstall jsonlint@1.6.2
+516 info uninstall jsonlint@1.6.2
+517 verbose true,/home/cole/node_modules,/home/cole/node_modules unbuild jsonlint@1.6.2
+518 verbose /home/cole/node_modules/.bin,[object Object] binRoot
+519 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/TextStream.js
+520 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/TextStream.js', 420, 436 ]
+521 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Lang.js
+522 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Lang.js', 420, 436 ]
+523 info postuninstall jsonlint@1.6.2
+524 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/Symbol.js
+525 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/Symbol.js', 420, 436 ]
+526 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/DocTag.js
+527 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/DocTag.js', 420, 436 ]
+528 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/JsPlate.js
+529 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/JsPlate.js', 420, 436 ]
+530 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/TokenReader.js
+531 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/TokenReader.js', 420, 436 ]
+532 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/JsDoc.js
+533 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/JsDoc.js', 420, 436 ]
+534 silly gunzTarPerm extractEntry jsdoc-toolkit/app/lib/JSDOC/TokenStream.js
+535 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/lib/JSDOC/TokenStream.js', 420, 436 ]
+536 silly gunzTarPerm extractEntry jsdoc-toolkit/app/handlers/
+537 silly gunzTarPerm modified mode [ 'jsdoc-toolkit/app/handlers/', 493, 509 ]
+538 error error rolling back Error: ENOTEMPTY, rmdir '/home/cole/node_modules/jsonlint/node_modules/JSV/jsdoc-toolkit/java/src'
+538 error error rolling back  jsonlint@1.6.2 { [Error: ENOTEMPTY, rmdir '/home/cole/node_modules/jsonlint/node_modules/JSV/jsdoc-toolkit/java/src']
+538 error error rolling back   errno: 53,
+538 error error rolling back   code: 'ENOTEMPTY',
+538 error error rolling back   path: '/home/cole/node_modules/jsonlint/node_modules/JSV/jsdoc-toolkit/java/src' }
+539 error Error: EACCES, mkdir '/home/cole/.npm/chalk/0.4.0'
+539 error  { [Error: EACCES, mkdir '/home/cole/.npm/chalk/0.4.0']
+539 error   errno: 3,
+539 error   code: 'EACCES',
+539 error   path: '/home/cole/.npm/chalk/0.4.0',
+539 error   parent: 'nomnom' }
+540 error Please try running this command again as root/Administrator.
+541 error System Linux 4.2.0-42-generic
+542 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "jsonlint"
+543 error cwd /home/cole/Desktop/research/dTree
+544 error node -v v0.10.25
+545 error npm -v 1.4.21
+546 error path /home/cole/.npm/chalk/0.4.0
+547 error code EACCES
+548 error errno 3
+549 error stack Error: EACCES, mkdir '/home/cole/.npm/chalk/0.4.0'
+550 verbose exit [ 3, true ]
