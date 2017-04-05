@@ -18,14 +18,14 @@ This approach also displays a descendancy tree of a queried individual. Instead 
   * __Features:__
     * __Generation Spanning:__
 Generation spanning occurs when an individual marries someone within their family in another generation (marrying niece or nephew). This results in an edge connection that skips a generation. This issue was handled in this implementation by graphing the older spouse twice. Firstly in their place as as a child, and secondly in their place as a spouse. When mousing over this individual their name will pop up in both locations to inform the user that the individual has two roles within the family. These nodes are also connected by a special blue edge to signify that they are the same person.
-      * __Spouses:__
+    * __Spouses:__
          1.  __Customizable Spouse Spacing : Uniform__
 Spouses are added to the family tree with uniform spacing on the levels. This means that all nodes on a generation are an equal distance apart.
          2.  __Customizable Spouse Spacing : Adjacent__
 Spouses are added adjacently to their spouse after all nodes have been positioned. This reduces cluttering when attempting to render a large number of nodes.
-      * __Parents of Spouses:__
+    * __Parents of Spouses:__
 This feature iterates up a second time allowing the parents of spouses to be graphed. This is done in an attempt to see if the parents of spouses have any other roles in the family.
-      * __Post Processing : Y coordinate as birth year__
+    * __Post Processing : Y coordinate as birth year__
 This feature uses the birth year of each person to determine the Y coordinate when graphed. This layout adds additional context that isn’t seen in a normal layout.
 3. __Ancestry Layout : OO (LayoutA.java)__
   * __Description:__
@@ -113,7 +113,7 @@ The location of spouses parents is determined by placing them within the range o
   * __Approach:__ 
   This approach uses the same layout logic as the optimal tree layout. Starting with the queried FamilyNode, it places parents to the left and then children to the right. In lower levels in connects children to the FamilyNode in the level below and continues the desired number of levels.
   
-##Unexplored Topics
+## Unexplored Topics
 1. Locating loops in the data and determine locations that loops can be split
   * i.e. what is the smallest change we can make to a graph to break loops
 2. Add multiple spouses to a Node and see how my code handles this situation
