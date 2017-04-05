@@ -58,7 +58,7 @@ This layout attempts to intuitively place place the parents of spouses on a desc
 This layout queries a FamilyNode and places parents to the left and children to the right. This continues recursively in a similar manner to the optimal tree layout. This layout needs work to more clearly show the desired information.
 
 
-##Approach to Layout Algorithms
+## Approach to Layout Algorithms
 The general approach taken to implement the layouts below is similar. I will first highlight the similarities between all the layouts below and for each layout I will discuss what was done in the approach to make the unique layout. 
 	 
 All layout algorithms below start by reading in the family data from a JSON file. This is done using the [Jackson](https://github.com/FasterXML/jackson) JSON parsing library. The JSON file contains a list of people objects with their specified data. Jackson marshals the entire JSON file into an array of ‘Person Objects.’ 
