@@ -3,12 +3,12 @@ Cole Schafer's Fall 2016 Capstone Research supervised by Luther Tychonievich
   * Topic: improving visualization methods used to represent family history data. 
   * This body of work comprises a collection of layout algorithms that show and handle family history data in a variety of ways.
 
-#Setup
+## Setup
 Upon cloning the repository two path variables must be changed in _/java/familylayout/src/modules/StaticUtils.java_. The variables of interest are '_dataIn_' and '_dataOut_.' '_dataIn_' is the location of your JSON to be read in. The inputted JSON must be in the format specified in _/java/person_model.json_. This JSON is created using a GEDCOM -> JSON parser. The '_dataOut_' variable should set the path location where you would like the output JSON to be written. This should be the path to the cloned reposity + _/geneaology-viz/d3/layout.json_.
 
 To view the output of a layout algorithm, you need a web-server of some sort. I recommend running __python -m SimpleHTTPServer__ in the _/geneaology-viz/d3_ folder.
 
-##Description of Layout Algorithms
+## Description of Layout Algorithms
 1. __Descendancy Layout (Layout.java)__
   * __Description:__
 This approach was my first attempt at visualization. The algorithm displays the specified number of generations of an individual.
