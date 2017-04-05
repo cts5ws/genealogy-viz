@@ -68,7 +68,7 @@ Next the algorithm iterates through the array of ‘Person’ object and sets up
 Once this is complete the algorithm creates each level of the tree and uses the family information to order the nodes in a way to minimize edge crossings. Lastly the the relevant nodes and edges are written to a JSON file that is used by [D3](https://github.com/d3/d3/wiki/gallery) on the front end to render the family tree.
    
 1. __Descendancy Layout__
-  * __Approach: __
+  * __Approach:__
 This approach uses only data structures to store the information. This worked initially, but as the code base became larger the overhead of the data structures made the code to complicated to work with.
 2. __Descendancy Layout : OO__
   * __Approach:__
